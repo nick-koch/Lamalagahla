@@ -1,0 +1,101 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 120%;
+    background-color: #0D2537;
+}
+
+.container {
+    display: flex;
+    left: center;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    padding-top: 10vh;
+}
+
+.baba {
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.logo {
+    display: block;
+    max-width: 40vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        padding-top: 3vh;
+    }
+
+    .logo {
+        display: block;
+        width: 50vw;
+    }
+    
+    .baba {
+        padding-top: 0%;
+        text-align: center;
+        width: 90vw;
+        height: 100%;
+        line-height: 70%;
+    }
+
+    .german h1 {
+        font-size: 200%;
+        padding-bottom: 20px;
+    }
+  }
+
+.german{
+    font-size: 110%;
+    line-height: 60%;
+    line-height: 70%;
+    letter-spacing: 2px;
+}
+
+.german {
+    padding-bottom: 20px;
+    font-family: 'Eczar', cursive;
+}
+
+h1 {
+    font-size: 300%;
+    padding-bottom: 20px;
+    color: #F6A34B;
+}
+
+.french {
+    font-size: 90%;
+    line-height: 60%;
+    font-family: 'Eczar', cursive;
+}
+
+.english {
+    font-size: 100%;
+    line-height: 60%;
+    font-family: 'Eczar', cursive;
+}
+
+a {
+    color: rgb(70, 60, 60);
+    text-decoration: none;
+}
+
+h4 {
+    color: #F6A34B;
+}
+
+h6 {
+    color: #9ED5ED
+}
+
+a {
+    color: rgb(89, 130, 148);
+}

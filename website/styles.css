@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+  }
+
+#bg-beige{
+  background-color: burlywood;
+}
+
+#navbar {
+    overflow: hidden;  
+    width: 100vw;
+    /* padding-left: 28vw; */
+}
+
+.bg-beige {
+    background-color:  rgb(216, 192, 167);
+}
+
+.nav-item {
+    color: red;
+}
+
+.navbar-right {
+    float: right;
+}
+
+
+#navbar a {
+    font-family: 'vvds';
+    float: left;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: red;
+}
+
+.content{
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: relative;
+    justify-content: center;
+}
+
+.titel{
+    font-family: 'vvds';
+    padding-top: 3vw;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: rgb(216, 192, 167);
+}
+
+.nav-link{
+    color: black !important;
+}
