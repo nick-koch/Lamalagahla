@@ -3,7 +3,7 @@ html {
   }
 
 #bg-beige{
-  background-color: burlywood;
+  background-color: rgb(216, 192, 167);
 }
 
 #navbar {
@@ -16,28 +16,13 @@ html {
     background-color:  rgb(216, 192, 167);
 }
 
-.nav-item {
-    color: red;
-}
-
 .navbar-right {
     float: right;
 }
 
-
-#navbar a {
-    font-family: 'vvds';
-    float: left;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: red;
-}
-
 .content{
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: rgb(216, 192, 167);
     position: relative;
     justify-content: center;
 }
@@ -55,5 +40,11 @@ html {
 }
 
 .nav-link{
-    color: black !important;
+    color: purple !important;
+    font-family: 'vvds';
+    text-align: center;
+    padding-top: 1em;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-right: 1.1em;
 }
