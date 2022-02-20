@@ -12,13 +12,13 @@ html {
 }
 
 canvas {
-    display:block;
+    display: block;
     overflow: hidden;
     z-index: -1;
 }
 
 body {
-    margin:0;
+    margin: 0;
     background-color: rgb(216, 192, 167);
     overflow-x: hidden;
 }
@@ -31,6 +31,18 @@ body {
     overflow: hidden;  
     width: 100vw;
     /* padding-left: 28vw; */
+}
+
+#title_svg {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 15;
+  width: 30vw;
+}
+
+#title {
+  font-family: "Lovecraft";
 }
 
 .bg-beige {
@@ -113,94 +125,11 @@ left: 34em;
   margin-right: 1.1em;
 }
 
-.img-about{
-    width: 60em;
-    float: left;
-}
-
-.text{
-  text-align: center;
-  padding-top: 2em;
-  padding-left: 10em;
-  padding-right: 10em;
-}
-
-.text_section{
-  font-family: 'vvds';
-  padding-top: 10em;
-}
-
-.img-title{
+#logo {
   position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.theme_small_text_programm {
-  font-size: 2em;
-  color: #F8A153;
-  font-weight: bolder;
-  text-align: center;
-  font-family: 'Poppins';
-}
-
-.text_style {
-  font-size: 2vh;
-  color: #4a2051;
-  font-family: 'Poppins';
-}
-
-#content h1 {
-font-family: 'vvds';
-word-spacing: -0.4em;
-}
-/* Gallery Grid */
-
-.grid {
-  padding-top: 10vh;
-  position: relative;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.col_style{
-    padding-top: 3em;
-    text-align: left;
-}
-.theme_header_text{
-    color: #7c7cba;
-    font-family: 'Poppins';
-}
-
-.img-div{
-    text-align: right;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .container {
-    position: relative;
-    text-align: center;
-  }
-
-.title-about{
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-.nav-link{
-    color: #692471 !important;
-    font-family: 'vvds';
-    text-align: center;
-    padding-top: 1em;
-    text-decoration: none;
-    font-size: 1.4em;
-    margin-right: 1.1em;
+  margin-left: 20vw;
+  margin-top: 2vh;
+  z-index: 25;
 }
 
 .text{
@@ -242,8 +171,10 @@ word-spacing: -0.4em;
 /* Gallery Grid */
 
 .grid {
-    width: 50%;
-    margin: 0 auto;
+  padding-top: 10vh;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .grid:after {
