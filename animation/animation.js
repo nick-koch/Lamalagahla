@@ -9,9 +9,9 @@ var index = 0;
 var leafs_left = new Image();
 var leafs_right = new Image();
 var date = new Image();
-leafs_left.src = "assets/logo/leafs_left.svg";
-leafs_right.src = "assets/logo/leafs_right.svg";
-date.src = "assets/logo/date.svg";
+leafs_left.src = "assets/leafs_left.svg";
+leafs_right.src = "assets/leafs_right.svg";
+date.src = "assets/date.svg";
 
 
 function animate(){
@@ -24,7 +24,7 @@ function animate(){
 
     if (String(anim_array[index]).includes("g")){
         var i = parseInt(anim_array[index].replace("g", ""));
-        img.src = "assets/logo/gum.svg";
+        img.src = "assets/gum.svg";
         img.onload = function() {
             var gum_w = lama_w/30+i*15;
             var gum_h = lama_h/30+i*15;
@@ -32,13 +32,13 @@ function animate(){
         }
         console.log(i);
     } else {
-        if(anim_array[index] == 2 && !mute){
+        if(anim_array[index] == 2){
             document.getElementById("chewing").play();
         }
-        if(anim_array[index] == 5 && !mute){
+        if(anim_array[index] == 5){
             document.getElementById("pop").play();
         }
-        img.src = "assets/logo/Lama" + anim_array[index] + ".svg";
+        img.src = "assets/Lama" + anim_array[index] + ".svg";
         img.onload = function() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             if(window.innerWidth > window.innerHeight){ 
@@ -61,23 +61,14 @@ function animate(){
 
 
 
-var interval_id = setInterval(animate, 1000/10);
+function start_animation(){
+    return setInterval(animate, 1000/10);
+}
+var interval_id = start_animation();
 
 window.addEventListener('resize', function(event) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    // window.clearInterval(interval_id);
+    // interval_id = start_animation();
 }, true);
-
-var mute = true;
-function toggleSound(img)
-{
-    if(mute){
-        img.src = "assets/logo/unmute.png";
-        mute = false;
-    }else{
-        img.src = "assets/logo/mute.png";
-        mute = true;
-        document.getElementById("chewing").pause();
-        document.getElementById("pop").pause();
-    }
-}

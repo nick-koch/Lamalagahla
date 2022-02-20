@@ -1,156 +1,173 @@
-html {
-    height: 100%;
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@font-face {
+  font-family: "Lovecraft";
+  src: url("../assets/fonts/Lovecraft/Love_Craft.otf");
   }
 
+html {
+  height: 100%;
+}
+
 canvas {
-    display:block;
-    overflow: hidden;
-    z-index: -1;
+  display: block;
+  overflow: hidden;
+  z-index: -1;
 }
 
 body {
-    margin:0;
-    background-color: rgb(216, 192, 167);
-    overflow-x: hidden;
+  margin: 0;
+  background-color: rgb(216, 192, 167);
+  overflow-x: hidden;
 }
 
-#bg-beige{
+#bg-beige {
   background-color: rgb(216, 192, 167);
 }
 
 #navbar {
-    overflow: hidden;  
-    width: 100vw;
-    /* padding-left: 28vw; */
+  overflow: hidden;
+  width: 100vw;
+  /* padding-left: 28vw; */
+}
+
+#title_svg {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 15;
+  width: 30vw;
+}
+
+#title {
+  font-family: "Lovecraft";
 }
 
 .bg-beige {
-    background-color:  rgb(216, 192, 167);
+  background-color: rgb(216, 192, 167);
 }
 
 .navbar-right {
-    float: right;
+  float: right;
 }
 
-.content{
-    height: 100vh;
-    background-color: rgb(216, 192, 167);
-    position: relative;
-    justify-content: center;
+.content {
+  height: 100vh;
+  background-color: rgb(216, 192, 167);
+  position: relative;
+  justify-content: center;
 }
 
-.titel{
-    font-family: 'vvds';
-    padding-top: 3vw;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+.navbar-nav > li > .dropdown-menu {
+  background-color: rgb(216, 192, 167);
 }
 
-.navbar-nav > li > .dropdown-menu { 
-    background-color: rgb(216, 192, 167);
+.nav-link {
+  color: purple !important;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 2.5vh;
+  text-decoration: none;
+  font-size: 2em;
+  margin-right: 1.1em;
 }
 
-.nav-link{
-    color: purple !important;
-    font-family: 'vvds';
-    text-align: center;
-    padding-top: 1em;
-    text-decoration: none;
-    font-size: 1.4em;
-    margin-right: 1.1em;
+#logo {
+  position: absolute;
+  margin-left: 20vw;
+  margin-top: 2vh;
+  z-index: 25;
 }
-
 
 /* Gallery Grid */
 
 .grid {
-    width: 50%;
-    margin: 0 auto;
+  padding-top: 10vh;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .grid:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+@media screen and (max-width: 600px) {
   .grid-sizer,
   .grid-item {
-    width: 33.333%;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .grid-sizer,
-    .grid-item {
     width: 50%;
   }
-  }
-  
-  .grid-item {
-    float: left;
-    position: relative;
-  }
-  
-  .grid-item img {
-    display: block;
-    max-width: 100%;
-    padding: 10px;
-  
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
-  
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #810505;
-  }
-  
-  .overlay_text {
-    color: var(--white);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .overlay_text > h1 {
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  
-  .overlay_text > h4 {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-  
-  #product_buttons {
-    padding: 10px;
-  }
-  
-  .grid-item:hover img {
-    opacity: 0.3;
-  }
-  
-  .grid-item:hover .overlay {
-    opacity: 1;
-  } 
-  
+}
 
+.grid-item {
+  float: left;
+  position: relative;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: 10px;
+
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #810505;
+}
+
+.overlay_text {
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+}
+
+.overlay_text > h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.overlay_text > h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#product_buttons {
+  padding: 10px;
+}
+
+.grid-item:hover img {
+  opacity: 0.3;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
 
 #mute {
   position: absolute;
