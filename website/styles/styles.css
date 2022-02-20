@@ -1,5 +1,6 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @font-face {
   font-family: "Lovecraft";
   src: url("../assets/fonts/Lovecraft/Love_Craft.otf");
@@ -7,6 +8,7 @@
 
 html {
   height: 100%;
+  background-color: #d8c0a7;
 }
 
 canvas {
@@ -22,7 +24,7 @@ body {
 }
 
 #bg-beige {
-  background-color: rgb(216, 192, 167);
+  background-color: #d8c0a7;
 }
 
 #navbar {
@@ -44,26 +46,77 @@ body {
 }
 
 .bg-beige {
-  background-color: rgb(216, 192, 167);
+  background-color:  #d8c0a7;
 }
 
 .navbar-right {
   float: right;
 }
 
-.content {
-  height: 100vh;
-  background-color: rgb(216, 192, 167);
+.content{
+  height: 100%;
+  background-color: #d8c0a7;
   position: relative;
   justify-content: center;
 }
 
-.navbar-nav > li > .dropdown-menu {
-  background-color: rgb(216, 192, 167);
+.titel{
+  font-family: 'vvds';
+  padding-top: 3vw;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+  background-color: #d8c0a7;
+}
+
+.img-about{
+  width: 60em;
+  float: left;
+}
+
+.img-svg {
+position: absolute;
+width: 35em;
+height: 25em;
+top: -3em;
+left: 34em;
+}
+
+.col_style{
+  padding-top: 3em;
+  text-align: left;
+}
+.theme_header_text{
+  color: #7c7cba;
+  font-family: 'Poppins';
+}
+
+.img-div{
+  text-align: right;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.title-about{
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 .nav-link {
-  color: purple !important;
+  color: #692471 !important;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin-top: 2.5vh;
@@ -79,6 +132,42 @@ body {
   z-index: 25;
 }
 
+.text{
+  text-align: center;
+  padding-top: 2em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.text_section{
+  font-family: 'vvds';
+  padding-top: 10em;
+}
+
+.img-title{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.theme_small_text_programm {
+  font-size: 2em;
+  color: #F8A153;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+.text_style {
+  font-size: 2vh;
+  color: #4a2051;
+  font-family: 'Poppins';
+}
+
+#content h1 {
+font-family: 'vvds';
+word-spacing: -0.4em;
+}
 /* Gallery Grid */
 
 .grid {
