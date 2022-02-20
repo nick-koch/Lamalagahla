@@ -16,18 +16,34 @@
 <body> 
     <section id="top">
     <!--Navigation bar-->
-      <script id="replace_with_navbar" src="js/script.js"></script>
+    <div id="navbar"></div>
+
     </section>
 
     <section id="page">
-        <div class="content">
-            <h1 class="titel">Festival Lamalagahla</h1>
+        
+    <canvas id="canvas"></canvas>
+    <img id="mute" src="assets/logo/mute.png" onclick='toggleSound(this);' width=50px height=50px>
 
-            <p></p>
-        </div>
+    <audio id="pop">
+        <source src="assets/logo/pop.ogg" type="audio/ogg">
+        <source src="assets/logo/pop.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="chewing">
+        <source src="assets/logo/chewing.ogg" type="audio/ogg">
+        <source src="assets/logo/chewing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div id="lama">
+    </div>
+
+    <script src="js/animation.js"></script>
+
     </section>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-      <script src="js/script.js"></script>
+      <script src="js/nav.js"></script>
   </body>
 </html>

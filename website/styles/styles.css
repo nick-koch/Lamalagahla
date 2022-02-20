@@ -2,6 +2,18 @@ html {
     height: 100%;
   }
 
+canvas {
+    display:block;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body {
+    margin:0;
+    background-color: rgb(216, 192, 167);
+    overflow-x: hidden;
+}
+
 #bg-beige{
   background-color: rgb(216, 192, 167);
 }
@@ -140,3 +152,9 @@ html {
   
 
 
+#mute {
+  position: absolute;
+  left: 95vw;
+  top: 5vh;
+  z-index: 20;
+}
