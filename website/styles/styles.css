@@ -5,6 +5,18 @@ html {
     background-color: #d8c0a7;
   }
 
+canvas {
+    display:block;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body {
+    margin:0;
+    background-color: rgb(216, 192, 167);
+    overflow-x: hidden;
+}
+
 #bg-beige{
   background-color: #d8c0a7;
 }
@@ -130,4 +142,99 @@ left: 34em;
 #content h1 {
   font-family: 'vvds';
   word-spacing: -0.4em;
+=======
+
+/* Gallery Grid */
+
+.grid {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.grid:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid-sizer,
+    .grid-item {
+    width: 50%;
+  }
+  }
+  
+  .grid-item {
+    float: left;
+    position: relative;
+  }
+  
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
+  
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+  
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #810505;
+  }
+  
+  .overlay_text {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .overlay_text > h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .overlay_text > h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  #product_buttons {
+    padding: 10px;
+  }
+  
+  .grid-item:hover img {
+    opacity: 0.3;
+  }
+  
+  .grid-item:hover .overlay {
+    opacity: 1;
+  } 
+  
+#mute {
+  position: absolute;
+  left: 95vw;
+  top: 5vh;
+  z-index: 20;
 }
