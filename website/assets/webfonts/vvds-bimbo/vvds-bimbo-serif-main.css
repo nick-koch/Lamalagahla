@@ -1,0 +1,27 @@
+/*
+Font: 		VVDS_Bimbo
+Style: 		Serif Main
+URL: 		https://www.youworkforthem.com/font/T9626/bimbo-hand-lettering-collection
+Foundry: 	Vintage Voyage Design
+Foundry: 	https://www.youworkforthem.com/designer/914/vintage-voyage-design
+Copyright:	Pavel Korzhenko
+Version: 	17
+Created:	August 23, 2018
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'VVDS_Bimbo-SerifMain';
+	src: url('vvds-bimbo-serif-main.eot');
+	src: url('vvds-bimbo-serif-main.eot?#iefix') format('embedded-opentype'),
+             url('vvds-bimbo-serif-main.woff2') format('woff2'),
+	     url('vvds-bimbo-serif-main.woff') format('woff'),
+	     url('vvds-bimbo-serif-main.ttf') format('truetype'),
+	     url('vvds-bimbo-serif-main.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
