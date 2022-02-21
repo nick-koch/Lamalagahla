@@ -41,6 +41,13 @@ body {
   width: 30vw;
 }
 
+#coming_soon {
+  z-index: 15;
+  width: 30vw;
+  margin-bottom: 80vh;
+  padding-top: 20vh;
+}
+
 #title {
   font-family: "Lovecraft";
 }
@@ -121,7 +128,7 @@ width: 20vw;
     margin-top: 5em;
     background-color: #4a2051   ;
     height: 100%;
-}
+  }
 
 .footer-content{
     padding-left: 15%;
