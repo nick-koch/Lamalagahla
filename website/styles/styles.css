@@ -74,6 +74,8 @@ body {
 
 .img-about{
   width: 80%;
+  width: 67em;
+  width: 67em;
   float: left;
 }
 
@@ -82,6 +84,12 @@ position: absolute;
 width: 35%;
 top: 7em;
 left: 53%;
+top: 5em;
+left: 34em;
+width: 20vw;
+top: 5em;
+left: 34em;
+width: 20vw;
 }
 
 .col_style{
@@ -91,6 +99,7 @@ left: 53%;
 .theme_header_text{
   color: #7c7cba;
   font-family: 'Poppins';
+  letter-spacing: 0.2em;
 }
 
 .img-div{

@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var anim_array = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,3,3,3,2,2,2,3,3,3,2,2,2,3,3,3,4,"g0","g1","g2","g3","g4","g5","g6","g7","g8","g9","g10","g11","g11","g12","g12","g12",5,5];
+var anim_array = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,3,3,3,2,2,2,3,3,3,2,2,2,3,3,3,1,1,1,1,1,1,1,1,4,4,"g0","g1","g2","g3","g4","g5","g6","g7","g8","g9","g10","g10","g11","g11","g11","g11","g12","g12","g12",5,5];
 var index = 0;
 
 var leafs_left = new Image();
@@ -15,7 +15,6 @@ date.src = "assets/logo/date.svg";
 
 
 function animate(){
-    console.log("animating");
 
     var img = new Image();
 
@@ -30,14 +29,18 @@ function animate(){
             var gum_h = lama_h/30+i*15;
             ctx.drawImage(img, (canvas.width/100*49.9)-(gum_w/2), (canvas.height/100*50)-(gum_h/2), gum_w, gum_h);
         }
-        console.log(i);
     } else {
-        if(anim_array[index] == 2 && !mute){
-            document.getElementById("chewing").play();
+        if(anim_array[index] == 2){
+            document.getElementById("gum").play();
+        } 
+        if (mute){
+            document.getElementById("gum").volume = 0;
+        } else {
+            document.getElementById("gum").volume = 1;
         }
-        if(anim_array[index] == 5 && !mute){
-            document.getElementById("pop").play();
-        }
+        // if(anim_array[index] == 5 && !mute){
+        //     document.getElementById("pop").play();
+        // }
         img.src = "assets/logo/Lama" + anim_array[index] + ".svg";
         img.onload = function() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -74,10 +77,12 @@ function toggleSound(img)
     if(mute){
         img.src = "assets/logo/unmute.png";
         mute = false;
+        document.getElementById("gum").volume = 1;
     }else{
         img.src = "assets/logo/mute.png";
         mute = true;
-        document.getElementById("chewing").pause();
-        document.getElementById("pop").pause();
+        // document.getElementById("chewing").pause();
+        // document.getElementById("pop").pause();
+        document.getElementById("gum").volume = 0;
     }
 }
