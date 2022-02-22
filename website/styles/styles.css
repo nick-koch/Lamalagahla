@@ -197,6 +197,18 @@ body {
   margin-right: 1.1em;
 }
 
+.nav-link.active {
+  color: #7D7DBB !important;
+}
+
+.nav-link:hover {
+  color: #881994 !important;
+}
+/* 
+.nav-link:active{
+  color: #810505 !important;
+} */
+
 #logo {
   position: relative;
   margin-top: 2vh;
