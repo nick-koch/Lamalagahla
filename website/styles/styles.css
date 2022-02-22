@@ -41,6 +41,19 @@ body {
   width: 30vw;
 }
 
+#title_svg_info {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 15;
+  width: 30vw; 
+}
+
+#title_bg_info{
+  display: block;
+  width: 20vw;
+}
+
 #coming_soon {
   z-index: 15;
   width: 30vw;
@@ -97,6 +110,19 @@ width: 20vw;
 top: 5em;
 left: 34em;
 width: 20vw;
+}
+
+#title_svg_info {
+  position: absolute;
+  z-index: 15;
+  top: 1.5%;
+  left: -1%;
+  width: 14vw; 
+}
+
+#title_bg_info {
+  width: 80%;
+  margin: 0 0 0 auto;
 }
 
 .col_style{
@@ -206,7 +232,7 @@ width: 20vw;
 }
 
 .text_style {
-    font-size: 2vh;
+    font-size: 2em;
     color: #4a2051;
     font-family: 'Poppins';
 }
@@ -310,4 +336,21 @@ width: 20vw;
   left: 95vw;
   top: 5vh;
   z-index: 20;
+}
+
+.info_icon {
+  width: 12vw;
+  float: left;
+  margin-left: -15%;
+}
+
+.info_text {
+  text-align: left;
+  padding-left: 3%;
+}
+
+.info_title {
+  padding-top: 2vh;
+  text-align: left;
+  padding-left: 3%;
 }
