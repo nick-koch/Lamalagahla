@@ -105,6 +105,11 @@ body {
   width: 25%;
 }
 
+.impressum {
+    color: #d8c0a7 !important;
+    text-decoration: underline;
+}
+
 .img-div-info{
     padding-top: 5em;
 }
@@ -153,8 +158,7 @@ body {
 .footer-content{
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 2em;
-
+    padding-top: 2em
 }
 
 .footer-title{
