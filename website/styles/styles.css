@@ -41,14 +41,6 @@ body {
   width: 30vw;
 }
 
-#title_svg_info {
-  position: absolute;
-  top: 3%;
-  left: 2%;
-  z-index: 15;
-  width: 30vw; 
-}
-
 #title_bg_info{
   display: block;
   width: 20vw;
@@ -95,36 +87,38 @@ body {
 .img-about{
   width: 80%;
   width: 67em;
-  width: 67em;
   float: left;
 }
 
 .img-svg {
-position: absolute;
-width: 35%;
-top: 7em;
-left: 53%;
-top: 5em;
-left: 34em;
-width: 20vw;
-top: 5em;
-left: 34em;
-width: 20vw;
+  position: absolute;
+  left: 30em;
+  top: 4em;
+  width: 60%;
 }
 
 #title_svg_info {
   position: absolute;
   z-index: 15;
-  top: 1.5%;
-  left: -1%;
-  width: 14vw; 
+  top: 2em;
+  left: 6.5em;
+  width: 25%;
+}
+
+.img-div-info{
+    padding-top: 5em;
 }
 
 #title_bg_info {
   width: 80%;
   margin: 0 0 0 auto;
 }
-
+.info-space{
+    padding-top: 6em;
+}
+.row-info{
+    padding-top: 4em;
+}
 .col_style{
   padding-top: 3em;
   text-align: left;
@@ -213,7 +207,6 @@ width: 20vw;
 }
 
 .text_section{
-    font-family: 'vvds';
     padding-top: 10em;
 }
 
