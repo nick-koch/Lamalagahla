@@ -6,15 +6,52 @@
   src: url("../assets/fonts/Lovecraft/Love_Craft.otf");
   }
 
-html {
-  height: 100%;
-  background-color: #d8c0a7;
-}
-
 canvas {
     display: block;
     overflow: hidden;
     z-index: -1;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+#date_svg {
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  z-index: -1;
+  padding-top: 5vh;
+  max-width: 80vw;
+}
+
+#leafes_left_svg {
+  position: absolute;
+  left: -10vw;
+  bottom: -15vh;
+  display: block;
+  overflow: hidden;
+  width: 50vw;
+}
+
+#leafes_right_svg {
+  position: absolute;
+  right: -10vw;
+  bottom: -15vh;
+  display: block;
+  overflow: hidden;
+  width: 50vw;
+}
+
+@media screen and (orientation: portrait) {
+  #leafes_left_svg {
+    display: none;
+  }
+  #leafes_right_svg {
+    display: none;
+  }
+  canvas {
+    padding-top: 25vh;
+    margin: auto;
+  }
 }
 
 body {
@@ -23,14 +60,22 @@ body {
     overflow-x: hidden;
 }
 
+
 #bg-beige {
   background-color: #d8c0a7;
 }
 
 #navbar {
-    overflow: hidden;  
+    /* overflow: hidden;   */
     width: 100vw;
     /* padding-left: 28vw; */
+}
+
+.navbar-toggler{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 
 #title_svg {
@@ -193,8 +238,8 @@ body {
   text-align: center;
   margin-top: 2.5vh;
   text-decoration: none;
-  font-size: 2em;
-  margin-right: 1.1em;
+  font-size: 1em;
+  margin-right: 0.1em;
 }
 
 .nav-link.active {
@@ -204,10 +249,6 @@ body {
 .nav-link:hover {
   color: #881994 !important;
 }
-/* 
-.nav-link:active{
-  color: #810505 !important;
-} */
 
 #logo {
   position: relative;
