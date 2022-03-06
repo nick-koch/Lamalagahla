@@ -20,7 +20,7 @@ canvas {
   overflow: hidden;
   z-index: -1;
   padding-top: 5vh;
-  max-width: 80vw;
+  max-width: 60vw;
 }
 
 #leafes_left_svg {
