@@ -133,13 +133,17 @@ body {
   width: 80%;
   width: 67em;
   float: left;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .img-svg {
   position: absolute;
-  left: 30em;
-  top: 4em;
-  width: 60%;
+  height: fit-content;
+  left: 55%;
+  top: 6%;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 
 #title_svg_info {
@@ -181,6 +185,10 @@ body {
 
 .img-div{
   text-align: right;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1em;
 }
 
 .centered {
