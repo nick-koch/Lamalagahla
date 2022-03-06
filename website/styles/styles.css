@@ -114,7 +114,7 @@ body {
 
 #coming_soon {
   z-index: 15;
-  width: 30vw;
+  width: 80%;
   margin-bottom: 80vh;
   padding-top: 20vh;
 }
@@ -151,23 +151,35 @@ body {
 }
 
 .img-about{
-  width: 80%;
   width: 67em;
+  height: auto;
+  display: block;
   float: left;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .img-svg {
-  position: absolute;
-  left: 30em;
-  top: 4em;
-  width: 60%;
-}
+  position: relative;
+  display: inline-block; 
+  top: -85%;
+  left: 7%;
+  height: 20%;
+  }
+
+  .img-div{
+    text-align: right;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1.5em;
+  }
 
 #title_svg_info {
   position: absolute;
   z-index: 15;
-  top: 2em;
-  left: 6.5em;
+  top: 1%;
+  left: 9%;
   width: 25%;
 }
 
@@ -177,7 +189,10 @@ body {
 }
 
 .img-div-info{
+    padding: 1em;
     padding-top: 5em;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 #title_bg_info {
@@ -198,11 +213,14 @@ body {
   color: #7c7cba;
   font-family: 'Poppins';
   letter-spacing: 0.2em;
+  font-size: 1.7em !important;
 }
 
-.img-div{
-  text-align: right;
+.navbar-toggler-icon{
+  color: #692471;
 }
+
+
 
 .centered {
   position: absolute;
@@ -307,7 +325,7 @@ body {
 }
 
 .text_style {
-    font-size: 1.3em;
+    font-size: 1.1em !important;
     color: #4a2051;
     font-family: 'Poppins';
 }
@@ -414,9 +432,9 @@ body {
 }
 
 .info_icon {
-  width: 12vw;
   float: left;
   margin-left: -15%;
+  max-width: fit-content;
 }
 
 .info_text {
