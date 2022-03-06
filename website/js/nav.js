@@ -7,7 +7,10 @@ fetch("nav.html")
     if (location.href.includes("index.html")) {
       console.log("index.html");
       var logo = document.getElementById("logo");
-      logo.style.display = "none";
+      // logo.style.display = "none";
+      logo.className += " visuallyhidden";
+      var nav_items = document.getElementById("nav-items");
+      nav_items.className = nav_items.className.replace("ml-auto", "mx-auto");
     }
 
     var pathname = document.location.pathname;

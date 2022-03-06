@@ -41,6 +41,20 @@ canvas {
   width: 50vw;
 }
 
+.visuallyhidden {
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 @media screen and (orientation: portrait) {
   #leafes_left_svg {
     display: none;
@@ -54,7 +68,13 @@ canvas {
   }
 }
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+    height: 100%;
     margin: 0;
     background-color: rgb(216, 192, 167);
     overflow-x: hidden;
@@ -69,6 +89,7 @@ body {
     /* overflow: hidden;   */
     width: 100vw;
     /* padding-left: 28vw; */
+    margin: auto;
 }
 
 .navbar-toggler{
@@ -192,6 +213,7 @@ body {
 .container {
   position: relative;
   text-align: center;
+  min-width: 50vw;
 }
 
 .footer-block{
@@ -252,8 +274,10 @@ body {
 }
 
 #logo {
-  position: relative;
-  margin-top: 2vh;
+  max-height: 10vh !important;
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
   z-index: 25;
 }
 
