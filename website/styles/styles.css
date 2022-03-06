@@ -238,8 +238,9 @@ body {
   text-align: center;
   margin-top: 2.5vh;
   text-decoration: none;
-  font-size: 1em;
-  margin-right: 0.1em;
+  font-size: 2em;
+  margin-right: 1.1em;
+  white-space: nowrap;
 }
 
 .nav-link.active {
