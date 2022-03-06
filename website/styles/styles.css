@@ -151,7 +151,7 @@ body {
 }
 
 .img-about{
-  width: 67em;
+  /* width: 67em; */
   height: auto;
   display: block;
   float: left;
@@ -161,10 +161,10 @@ body {
 
 .img-svg {
   position: relative;
-  display: inline-block; 
-  top: -85%;
-  left: 7%;
+  display: inline-block;
+  right: 0%;
   height: 20%;
+  top: -80%;
   }
 
   .img-div{
@@ -179,7 +179,7 @@ body {
   position: absolute;
   z-index: 15;
   top: 1%;
-  left: 9%;
+  left: -2%;
   width: 25%;
 }
 
@@ -191,12 +191,12 @@ body {
 .img-div-info{
     padding: 1em;
     padding-top: 5em;
-    max-width: 100%;
+    min-width: 80%;
     max-height: fit-content;
 }
 
 #title_bg_info {
-  width: 80%;
+  width: 100%;
   margin: 0 0 0 auto;
 }
 .info-space{
