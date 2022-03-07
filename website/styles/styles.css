@@ -20,7 +20,7 @@ canvas {
   overflow: hidden;
   z-index: -1;
   padding-top: 5vh;
-  width: 20vw;
+  /* width: 20vw; */
 }
 
 #leafes_left_svg {
@@ -29,7 +29,7 @@ canvas {
   bottom: -15vh;
   display: block;
   overflow: hidden;
-  width: 50vw;
+  width: 40vw;
 }
 
 #leafes_right_svg {
@@ -38,7 +38,7 @@ canvas {
   bottom: -15vh;
   display: block;
   overflow: hidden;
-  width: 50vw;
+  width: 40vw;
 }
 
 .visuallyhidden {
@@ -62,9 +62,15 @@ canvas {
   #leafes_right_svg {
     display: none;
   }
+  /* #date_svg {
+    width: 50vw;
+  } */
   canvas {
     padding-top: 25vh;
     margin: auto;
+  }
+  .grid {
+    width: 100% !important;
   }
 }
 
@@ -78,6 +84,12 @@ body {
     margin: 0;
     background-color: rgb(216, 192, 167);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#page {
+  flex: 1 0 auto;
 }
 
 
@@ -152,35 +164,49 @@ body {
 
 .img-about{
   /* width: 67em; */
-  height: auto;
+  /* height: auto;
   display: block;
   float: left;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; */
+  width: 100%;
+  margin: 0 0 0 auto;
 }
 
 .img-svg {
-  position: relative;
+  /* position: relative;
   display: inline-block;
   right: 0%;
   height: 20%;
-  top: -80%;
+  top: -80%; */
+  position: absolute;
+  z-index: 15;
+  top: 5%;
+  right: 10%;
+  height: 10em;
+  max-width: 50vw;
   }
 
-  .img-div{
-    text-align: right;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 1.5em;
-  }
+.img-div{
+  /* position: relative;
+  text-align: right;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1.5em; */
+
+  /* padding-top: 5em; */
+  min-width: 80%;
+  max-height: fit-con
+}
 
 #title_svg_info {
   position: absolute;
   z-index: 15;
   top: 1%;
   left: -2%;
-  width: 25%;
+  height: 10em;
+  max-width: 50vw;
 }
 
 .impressum {
@@ -197,7 +223,7 @@ body {
 
 #title_bg_info {
   width: 100%;
-  margin: 0 0 0 auto;
+  margin: auto 0 0 0;
 }
 .info-space{
     padding-top: 6em;
@@ -234,6 +260,9 @@ body {
   min-width: 50vw;
 }
 
+footer {
+  flex-shrink: 0;
+}
 .footer-block{
     margin-top: 5em;
     background-color: #4a2051   ;
@@ -306,8 +335,8 @@ body {
     padding-right: 10em;
 }
 
-.text_section{
-    padding-top: 10em;
+.text_section {
+  padding-top: 5vh;
 }
 
 .img-title{
@@ -434,7 +463,7 @@ body {
 .info_icon {
   float: left;
   margin-left: -15%;
-  max-width: fit-content;
+  /* max-width: fit-content; */
 }
 
 .info_text {

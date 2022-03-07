@@ -12,7 +12,8 @@ if (window.innerWidth > window.innerHeight){
 }
 
 canvas.height = logo_h*factor;
-canvas.width = logo_w*factor; 
+canvas.width = logo_w*factor;
+document.getElementById("date_svg").style.width = canvas.width*0.7 + "px";
 
 
 console.log(canvas);

@@ -4,13 +4,14 @@ fetch("nav.html")
     let elem = document.querySelector("div#navbar");
     elem.innerHTML = text;
 
-    if (location.href.includes("index.html")) {
+    if (location.href.includes("index.html") || location.href.endsWith("/")) {
       console.log("index.html");
       var logo = document.getElementById("logo");
       // logo.style.display = "none";
       logo.className += " visuallyhidden";
       var nav_items = document.getElementById("nav-items");
       nav_items.className = nav_items.className.replace("ml-auto", "mx-auto");
+      document.body.style.overflow = "hidden";
     }
 
     var pathname = document.location.pathname;
