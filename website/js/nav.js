@@ -37,3 +37,4 @@ $(window).bind('resize', function(e)
     this.location.reload(false); /* false to get page from cache */
   }, 100);
 });
+
