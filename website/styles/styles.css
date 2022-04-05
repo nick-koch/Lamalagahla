@@ -133,6 +133,8 @@ body {
 
 #title {
   font-family: "Lovecraft";
+  font-size: min(max(25px, 4vw), 5em);
+  color: #ea5d7b;
 }
 
 .bg-beige {
@@ -243,7 +245,7 @@ body {
 }
 .container {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   min-width: 50vw;
 }
 
@@ -462,4 +464,46 @@ footer {
   padding-top: 2vh;
   text-align: left;
   padding-left: 3%;
+}
+
+.sponsors_logo {
+	max-height: 5em;
+	/* max-width: 3em; */
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.email_link{
+	color: #7c7cba !important;
+}
+
+.email_link:hover {
+	color: #881994 !important;
+}
+
+.program_date {
+	color: #d8c0a7;
+	font-family: 'Poppins';
+	/* letter-spacing: 0.2em; */
+	font-size: 1em !important;
+	width: min-content;
+	padding: 0.3em;
+	background-color: #ea5d7b;
+}
+
+.program_acts {
+	color: #ea5d7b;
+	font-size: 2em !important;
+	font-family: 'Poppins';
+}
+
+.program_act_link {
+	color: #7D7DBB !important;
+	/* font-family: 'Poppins'; */
+	/* font-size: 2em !important; */
+}
+
+.program_act_link:hover {
+	color: #881994 !important;
+	text-decoration: none;
 }
