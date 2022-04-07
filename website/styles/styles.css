@@ -507,3 +507,8 @@ footer {
 	color: #881994 !important;
 	text-decoration: none;
 }
+
+#map { 
+	height: 50vh;
+	width: 100%;
+}
