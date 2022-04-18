@@ -512,3 +512,11 @@ footer {
 	height: 50vh;
 	width: 100%;
 }
+
+.flexbox {
+	background-color: transparent !important;
+}
+
+iframe {
+	border-radius: 2em;
+}
