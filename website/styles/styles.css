@@ -400,6 +400,10 @@ footer {
     float: left;
     position: relative;
   }
+
+  .grid-item-max-width {
+    width: 100% !important;
+  }
   
   .grid-item img {
     display: block;
@@ -451,13 +455,13 @@ footer {
     padding: 10px;
   }
   
-  .grid-item:hover img {
+  /* .grid-item:hover img {
     opacity: 0.3;
   }
   
   .grid-item:hover .overlay {
     opacity: 1;
-  } 
+  }  */
   
 #mute {
   position: absolute;
