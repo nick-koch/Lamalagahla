@@ -467,11 +467,9 @@ footer {
 }
 
 .sponsors_logo {
-	max-height: 5em;
-	max-width: 8em;
-	/* max-width: 3em; */
-	margin-left: 1em;
-	margin-right: 1em;
+	margin: 10%;
+	max-width: 80%;
+	max-height: 80%;
 }
 
 .email_link{
