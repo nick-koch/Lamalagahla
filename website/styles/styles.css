@@ -184,6 +184,7 @@ body {
     max-width: 50vw;
   }
 
+
 .img-div{
   min-width: 80%;
   max-height: fit-content;
@@ -380,24 +381,10 @@ footer {
   font-size: 1em;
 }
 
-.act_dj{
-  color: #7c7cba !important;
-  font-weight: bold;
-}
 
-.act_band{
-  color: #4a2051 !important;
-  font-weight: bold;
-}
-
-.entertainment{
-  color: #4a2051 !important;
-  font-weight: bold;
-  font-size: 1.4em !important;
-}
 
 .act{
-  font-size: 1.4em !important;
+  font-size: 1.8em !important;
 }
 
 .act:hover {
@@ -560,11 +547,49 @@ footer {
 .program_date {
 	color: #d8c0a7;
 	font-family: 'Poppins';
-	/* letter-spacing: 0.2em; */
-	font-size: 1.3em !important;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+	font-size: 2vmax !important;
 	width: fit-content;
 	padding: 0.3em;
 	background-color: #ea5d7b;
+}
+
+.program_title {
+	color: #d8c0a7;
+	font-family: 'Poppins';
+  font-weight: bolder;
+	font-size: 2vmax !important;
+  letter-spacing: 0.1em;
+	width: fit-content;
+	padding: 0.3em;
+	background-color: #ea5d7b;
+}
+
+.act_band{
+  color: #692471 !important;
+  font-weight: bolder;
+  font-size: 3.5vmax !important;
+}
+
+.act_dj{
+  color: #7c7cba !important;
+  font-weight: bolder;
+  font-size: 3.5vmax !important;
+}
+
+.entertainment{
+  color: #692471 !important;
+  font-weight: bold;
+  font-size: 2.5vmax !important;
+}
+
+.timestamps{
+  color: #692471 !important;
+  font-weight: bold;
+  font-size: 2vmax !important;
+  text-align: end;
+  vertical-align: bottom !important;
 }
 
 .program_acts {
