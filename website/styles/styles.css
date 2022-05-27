@@ -184,6 +184,7 @@ body {
     max-width: 50vw;
   }
 
+
 .img-div{
   min-width: 80%;
   max-height: fit-content;
@@ -330,9 +331,10 @@ footer {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    /* width: 50%; */
+     width: 50%; 
   }
-} */
+} 
+*/
 
 .text{
     text-align: center;
@@ -351,12 +353,54 @@ footer {
     right: 16px;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .theme_small_text_programm {
     font-size: 2em;
     color: #F8A153;
     font-weight: bolder;
     text-align: center;
     font-family: 'Poppins';
+}
+
+.act-table{
+  width: 100%;
+}
+
+.act_time{
+  text-align: right !important;
+  font-size: 1em;
+}
+
+
+
+.act{
+  font-size: 1.8em !important;
+}
+
+.act:hover {
+	text-decoration: none;
+}
+
+.table-borderless {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+
+.table-borderless td,
+.table-borderless th {
+    border: 10;
 }
 
 .text_style {
@@ -503,11 +547,49 @@ footer {
 .program_date {
 	color: #d8c0a7;
 	font-family: 'Poppins';
-	/* letter-spacing: 0.2em; */
-	font-size: 1em !important;
-	width: min-content;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+	font-size: 2vmax !important;
+	width: fit-content;
 	padding: 0.3em;
 	background-color: #ea5d7b;
+}
+
+.program_title {
+	color: #d8c0a7;
+	font-family: 'Poppins';
+  font-weight: bolder;
+	font-size: 2vmax !important;
+  letter-spacing: 0.1em;
+	width: fit-content;
+	padding: 0.3em;
+	background-color: #ea5d7b;
+}
+
+.act_band{
+  color: #692471 !important;
+  font-weight: bolder;
+  font-size: 3.5vmax !important;
+}
+
+.act_dj{
+  color: #7c7cba !important;
+  font-weight: bolder;
+  font-size: 3.5vmax !important;
+}
+
+.entertainment{
+  color: #692471 !important;
+  font-weight: bold;
+  font-size: 2.5vmax !important;
+}
+
+.timestamps{
+  color: #692471 !important;
+  font-weight: bold;
+  font-size: 2vmax !important;
+  text-align: end;
+  vertical-align: bottom !important;
 }
 
 .program_acts {
