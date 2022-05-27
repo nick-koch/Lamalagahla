@@ -21,3 +21,12 @@ var polygon = L.polygon([
 	[47.333049893298224, 8.411955708398473],
 	[47.33310484156743, 8.413390978094903],
 ]).addTo(map);
+
+
+L.Routing.control({
+    waypoints: [
+        L.latLng(47.34133, 8.3968),
+        L.latLng(47.3329, 8.41256)
+    ],
+    // routeWhileDragging: true,
+}).addTo(map);

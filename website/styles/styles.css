@@ -539,3 +539,8 @@ footer {
 iframe {
 	border-radius: 2em;
 }
+
+
+.leaflet-routing-container { 
+	display: none !important;
+}
