@@ -1,4 +1,6 @@
-var map = L.map("map").setView([47.3329, 8.41256], 18);
+var fieldLatLng = [47.3329, 8.41256];
+
+var map = L.map("map").setView([47.3302, 8.4143], 15);
 
 L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
 //   fullscreenControl: true,
@@ -22,11 +24,37 @@ var polygon = L.polygon([
 	[47.33310484156743, 8.413390978094903],
 ]).addTo(map);
 
+var greenIcon = L.icon({
+    iconUrl: 'assets/map/bus_icon.svg',
 
-L.Routing.control({
-    waypoints: [
-        L.latLng(47.34133, 8.3968),
-        L.latLng(47.3329, 8.41256)
-    ],
-    // routeWhileDragging: true,
-}).addTo(map);
+    iconSize:     [50, 120], // size of the icon
+    iconAnchor:   [20, 50], // point of the icon which will correspond to marker's location
+});
+
+
+function addBusMarkerAndRouting(busstop, lat, lng, via) {
+	L.marker([lat, lng], {icon: greenIcon}).addTo(map).bindTooltip(busstop, {permanent: true, offset: [0, -20], direction: "top"}).openTooltip();;
+
+	var waypoints = [];
+	waypoints.push(L.latLng(lat, lng));
+	for(point in via){
+		waypoints.push(L.latLng(via[point][0], via[point][1]));
+	}
+	waypoints.push(L.latLng(fieldLatLng[0], fieldLatLng[1]))
+
+	L.Routing.control({
+		waypoints: waypoints,
+		createMarker: function() { return null; },
+		lineOptions : {
+			addWaypoints: false
+		},
+	}).addTo(map);
+}
+
+
+addBusMarkerAndRouting("Oberwil-Lieli (AG), Lieli Dorf", 47.34133, 8.3968);
+addBusMarkerAndRouting("Aesch (ZH), Gemeindehaus", 47.33782, 8.43852);
+addBusMarkerAndRouting("Arni (AG), Arni Dorf", 47.31831, 8.41927, [[47.32448, 8.41363], [47.32835, 8.4235]]);
+
+
+
