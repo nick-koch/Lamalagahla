@@ -626,3 +626,9 @@ iframe {
 .leaflet-routing-container { 
 	display: none !important;
 }
+
+.ten_min_more_button {
+  background: none !important;
+  border: none;
+  padding: 10px !important;
+}
