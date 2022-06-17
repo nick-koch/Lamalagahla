@@ -519,6 +519,13 @@ footer {
   margin-left: -15%;
 }
 
+@media only screen and (orientation: portrait) {
+  .info_icon {
+    float: auto;
+    margin-left: 0;
+  }
+}
+
 .info_text {
   text-align: left;
   padding-left: 3%;
