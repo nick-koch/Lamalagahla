@@ -413,6 +413,13 @@ footer {
   font-family: 'vvds';
   word-spacing: -0.4em;
 }
+
+.ticket_info{
+	color: #4a2051;
+    font-family: 'Poppins';
+}
+
+
 /* Gallery Grid */
 
 .grid {
