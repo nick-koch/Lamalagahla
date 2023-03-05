@@ -1,6 +1,6 @@
 var fieldLatLng = [47.3329, 8.41256];
 
-var map = L.map("map").setView([47.3302, 8.4148], 14);
+var map = L.map("map").setView([47.3302, 8.4143], 15);
 
 L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
 //   fullscreenControl: true,
@@ -58,12 +58,3 @@ addBusMarkerAndRouting("Arni (AG), Arni Dorf", 47.31831, 8.41927, [[47.32448, 8.
 
 
 
-$("#collapseTwo").on('show.bs.collapse', function(){
-    $("#map").show();
-  });
-
-$("#collapseTwo").on('hide.bs.collapse', function(){
-    $("#map").hide();
-  });
-
-$("#map").hide();
