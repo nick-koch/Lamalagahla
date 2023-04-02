@@ -75,6 +75,10 @@ body {
   background-color: #d3d3d3;
 }
 
+.bg-red {
+  background-color: #bf4747;
+}
+
 .navbar {
   margin-bottom: -1rem;
 }
@@ -407,4 +411,17 @@ iframe {
 
 .leaflet-routing-container {
   display: none !important;
+}
+
+.ol_agb {
+  counter-reset: item
+}
+
+.li_agb {
+  display: block
+}
+
+.li_agb:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
 }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="lamalagahla, lamalahgahlah, lamalagala, lamalawas, lahmalagahla, lamalagahlah, lamalaga, lahmalaga" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lamalagahla Festival</title>
+    <!-- <link href="js/utils/Raleway.css" rel="stylesheet"> -->
+    <link href="js/utils/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="js/utils/leafletjs/leaflet.css" />
+    <!-- <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' /> -->
+    <link rel="stylesheet" href="js/utils/leaflet_routing_machine/leaflet-routing-machine.css" />
+
+</head>
+
+<body>
+
+    <div id="page">
+
+        <section>
+            <div>
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <button class="navbar-toggler border rounded bg-white" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <!--<span class="navbar-toggler-icon"></span>-->
+                        <span class="navbar-toggler-icon burger-menu-lines rounded-pill"></span>
+                        <span class="navbar-toggler-icon burger-menu-lines rounded-pill"></span>
+                        <span class="navbar-toggler-icon burger-menu-lines rounded-pill"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mx-auto bg-white p-2 rounded" id="navbarNavDropdown">
+                        <ul id="nav-items" class="navbar-nav mx-auto">
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="./#ueber_uns">Über Uns</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" aria-current="page" href="./#programm">Programm</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" aria-current="page" href="./#info">Info</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" aria-current="page" href="./#tickets">Tickets</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" aria-current="page" href="./#galerie">Galerie</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section_container" id="agb">
+            <section class="content bg-red rounded">
+
+                <div class="container-fluid" style="text-align: left;">
+                    <!-- <img id="coming_soon" src="assets/comingsoon.svg" alt="comingsoon"> -->
+
+                    <div class="theme_header mx-auto">
+                        <h1 class="theme_header_title mx-auto">AGB</h1>
+                        <h1 class="theme_header_subtitle mx-auto">Allgemeine Geschäftsbedingungen</h1>
+
+                        <ol class="ol_agb">
+                            <li class="li_agb">Geltungsbereich
+                                <ol class="ol_agb">
+                                    <li class="li_agb">Diese AGB gelten für sämtliche Besucher:innen, Künstler:innen und
+                                        Teilnehmer:innen des Festivals Lamalagahla, welches vom Verein Alpackada
+                                        organisiert wird.</li>
+                                </ol>
+                            </li>
+                            <li class="li_agb">Tickets
+                                <ol class="ol_agb">
+                                    <li class="li_agb">Der Eintritt zum Festival ist nur mit einem gültigen Ticket gestattet.</li>
+                                    <li class="li_agb">Das Ticket berechtigt zum Eintritt des Festivals und ist
+                                        nicht übertragbar. </li>
+                                    <li class="li_agb">Eine Rückgabe oder ein Umtausch von Tickets ist ausgeschlossen.</li>
+                                </ol>
+                            </li>
+                            <li class="li_agb">Verhaltensregeln
+                                <ol class="ol_agb">
+                                    <li class="li_agb">Jede Besucher:in des Festivals hat sich an die geltenden Verhaltensregeln zu
+                                        halten. </li>
+                                    <li class="li_agb">Es ist untersagt, das Festivalgelände zu betreten oder zu verlassen, ohne
+                                        eine gültige Eintrittskarte vorzuweisen. </li>
+                                    <li class="li_agb">Jegliche Art von Diskriminierung, Belästigung oder Gewalt wird nicht
+                                        toleriert und kann zum Ausschluss vom Festival führen.</li>
+                                </ol>
+                            </li>
+                            <li class="li_agb">Haftung
+                                <ol class="ol_agb">
+                                    <li class="li_agb">Der Verein Alpackada haftet nicht für Verluste oder Schäden an
+                                        mitgebrachten Gegenständen. </li>
+                                    <li class="li_agb">Der Verein Alpackada haftet nicht für Verletzungen oder Schäden, die
+                                        während des Festivals entstehen.</li>
+                                    <li class="li_agb">Die Besucher:innen haften selbst für alle Schäden, die sie auf dem
+                                        Festivalgelände verursachen.</li>
+                                </ol>
+                            </li>
+                            <li class="li_agb">Bild- und Tonrechte </li>
+                            <ol class="ol_agb">
+                                <li class="li_agb">Der Verein Alpackada behält sich das Recht vor, während des Festivals Bild-
+                                    und Tonmaterial zu produzieren.</li>
+                                <li class="li_agb">Der Verein Alpackada besitzt alle Rechte an diesem Material und darf es
+                                    uneingeschränkt nutzen und veröffentlichen. </li>
+                                <li class="li_agb">Durch den Besuch des Festivals erklären sich die Besucher:innen damit
+                                    einverstanden, dass sie möglicherweise auf Bild- und Tonmaterial zu sehen oder zu
+                                    hören sind. </li>
+                                <li class="li_agb">Falls jemand auf einem Bild oder Tonmaterial zu sehen oder zu hören ist und
+                                    die Entfernung von der Website oder den sozialen Medien wünscht, kann er oder sie
+                                    sich gerne an die Kommunikationsverantwortlichen wenden.</li>
+                            </ol>
+                            <li class="li_agb">Datenschutz</li>
+                            <ol class="ol_agb">
+                                <li class="li_agb">Der Verein Alpackada erhebt und verarbeitet personenbezogene Daten der
+                                    Besucher:innen ausschliesslich zur Durchführung des Festivals.</li>
+                                <li class="li_agb">Der Verein Alpackada gibt diese Daten nicht an Dritte weiter und löscht sie nach
+                                    Ablauf der gesetzlichen Aufbewahrungsfristen.</li>
+                            </ol>
+                            <li class="li_agb">Salvatorische Klausel 
+                                <ol class="ol_agb">
+                                    <li class="li_agb">
+                                        Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder
+                                        werden, bleibt die Wirksamkeit der übrigen Bestimmungen hiervon unberührt.
+                                    </li>
+                                </ol>
+                                </li>
+                            <li class="li_agb">Anwendbares Recht und Gerichtsstand</li>
+                            <ol class="ol_agb">
+                                <li class="li_agb">Diese AGB unterliegen schweizerischem Recht. </li>
+                                <li class="li_agb">Ausschliesslicher Gerichtsstand ist der Sitz des Vereins Alpackada.</li>
+                            </ol>
+                        </ol>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <div class="footer-block">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h4 class="footer-title">Kontakt</h4>
+                            <p class="footer-address">
+                                Verein Alpackada<br />
+                                Litzibuchstrasse 29<br />
+                                8966 Oberwil-Lieli<br />
+                                <a class="email_link" href="mailto:verein@alpackada.ch">verein@alpackada.ch</a> <br>
+                                <a class="email_link" href="mailto:festival@lamalagahla.ch">festival@lamalagahla.ch</a>
+                                <br>
+                                +41 75 410 98 81 <br>
+                            </p>
+                        </div>
+                        <div class="col-sm">
+                            <h4 class="footer-title">Sponsoren & Partner</h4>
+                            <div class="row">
+                                <div
+                                    class="col-6 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://www.utzgroup.ch/"><img class="sponsors_logo"
+                                            src="./assets/sponsors/utz.svg" alt="Georg Utz AG"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h4 class="footer-title">Impressum</h4>
+                            <a aria-current="page" href="agb.html" class="impressum">AGB</a>
+                        </div>
+                    </div>
+                    <row class="footer-text row">
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="js/utils/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/utils/popper.min.js"></script>
+    <script src="js/utils/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
