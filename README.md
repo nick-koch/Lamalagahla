@@ -2,4 +2,4 @@
 Festival Website
 
 
-https://nick-koch.github.io/Lamalagahla/website/
+https://nick-koch.github.io/Lamalagahla/current/
