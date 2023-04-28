@@ -305,7 +305,7 @@
                                 <div class="flex-left">
 
                                     <p class="mb-0">
-                                    Orient Techno
+                                        Orient Techno
                                     </p>
                                 </div>
                                 <div class="flex-right flex-shrink-0">
@@ -420,13 +420,13 @@
                         <div class="card border rounded bg-white">
                             <div class="card-header p-0">
                                 <a class="info_title theme_header_text-2">
-                                    Jeremy
+                                    Tschäber
                                 </a>
                             </div>
                             <div class="card-body info_text text_style p-0">
                                 <div class="flex-left">
                                     <p class="mb-0">
-                                        Poetry-Musik
+                                        Techno-Literatur
                                     </p>
                                 </div>
                                 <div class="flex-right flex-shrink-0">
@@ -1175,39 +1175,41 @@
     <script src="js/utils/leaflet_routing_machine/leaflet-routing-machine.js"></script>
     <script src="js/map.js"></script>
     <script>
-       // Get all paragraph elements in the document with the class 'flex-left'
-const paragraphs = document.querySelectorAll('.flex-left p');
+        // Get all paragraph elements in the document with the class 'flex-left'
+        const paragraphs = document.querySelectorAll('.flex-left p');
 
-// Loop through each paragraph element
-paragraphs.forEach(paragraph => {
-  // Check if the paragraph width is greater than the container width
-  if (paragraph.offsetWidth > paragraph.parentNode.offsetWidth) {
-    // Set the animation duration based on the width of the paragraph element and its content
-    const duration = (paragraph.offsetWidth - paragraph.parentNode.offsetWidth) / 10;
-    paragraph.style.animation = `move ${duration}s linear infinite`;
+        // Loop through each paragraph element
+        paragraphs.forEach((paragraph, index) => {
+            // Check if the paragraph width is greater than the container width
+            if (paragraph.offsetWidth > paragraph.parentNode.offsetWidth) {
 
-    // Define the keyframes for the animation
-    const keyframes = [
-      { transform: `translateX(0)` },
-      { transform: `translateX(-${paragraph.offsetWidth - paragraph.parentNode.offsetWidth + 8}px)` },
-      { transform: `translateX(0)` }
-    ];
+                // Set the animation duration based on the width of the paragraph element and its content
+                //const duration = 10;
+                const duration = (paragraph.offsetWidth - paragraph.parentNode.offsetWidth) / 8;
+                paragraph.style.animation = `move-${index} ${duration}s linear infinite forwards`;
 
-    // Define the animation
-    const animation = document.createElement('style');
-    animation.type = 'text/css';
-    animation.innerHTML = `
-      @keyframes move {
+                // Define the keyframes for the animation
+                const keyframes = [
+                    { transform: `translateX(0.25rem)` },
+                    { transform: `translateX(calc(-${paragraph.offsetWidth - paragraph.parentNode.offsetWidth}px - 0.5rem))` },
+                    { transform: `translateX(0.25rem)` }
+                ];
+
+                // Define the animation
+                const animation = document.createElement('style');
+                animation.type = 'text/css';
+                animation.innerHTML = `
+      @keyframes move-${index} {
         ${keyframes.map((keyframe, index) => {
-          return `${(index / (keyframes.length - 1)) * 100}% { ${Object.entries(keyframe).map(([prop, value]) => `${prop}: ${value};`).join(' ')} }`;
-        }).join('\n')}
+                    return `${(index / (keyframes.length - 1)) * 100}% { ${Object.entries(keyframe).map(([prop, value]) => `${prop}: ${value};`).join(' ')} }`;
+                }).join('\n')}
       }
     `;
 
-    // Append the animation to the document head
-    document.head.appendChild(animation);
-  }
-});
+                // Append the animation to the document head
+                document.head.appendChild(animation);
+            }
+        });
 
     </script>
 </body>
