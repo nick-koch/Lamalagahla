@@ -423,7 +423,8 @@ body {
 }
 
 iframe {
-  border-radius: 2em;
+  border-radius: 0.5rem;
+  border: 0.3rem solid black !important;
 }
 
 .leaflet-routing-container {
